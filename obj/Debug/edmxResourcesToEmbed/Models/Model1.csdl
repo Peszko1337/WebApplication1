@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BazaDanychFilipPeszkoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EMPINFO">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="EmpID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Imię" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Wiek" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Stan_Konta" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="BazaDanychFilipPeszkoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EMPINFOes" EntityType="Self.EMPINFO" />
+  </EntityContainer>
+</Schema>

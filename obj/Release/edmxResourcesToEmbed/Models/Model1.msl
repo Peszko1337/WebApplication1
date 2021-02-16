@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BazaDanychFilipPeszkoModelStoreContainer" CdmEntityContainer="BazaDanychFilipPeszkoEntities">
+    <EntitySetMapping Name="EMPINFOes">
+      <EntityTypeMapping TypeName="BazaDanychFilipPeszkoModel.EMPINFO">
+        <MappingFragment StoreEntitySet="EMPINFO">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="Imię" ColumnName="Imię" />
+          <ScalarProperty Name="Wiek" ColumnName="Wiek" />
+          <ScalarProperty Name="Stan_Konta" ColumnName="Stan Konta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
